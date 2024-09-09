@@ -1,68 +1,109 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+body{
+  padding: 0;
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color:#ea3c5f;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 700px;
+  left: 0;
+  top: 0;
+  height: 11vh;
+  width: 100vw;
+  position: fixed;
+  background-color: #ea3c5f;
+  z-index: 1030;
+}
+.wavy-border {
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+  overflow: hidden;
+  background: linear-gradient(to bottom, transparent 50%, #007bff 50%) no-repeat;
+  background-size: 100% 20px; /* Imposta l'altezza dell'effetto ondulato */
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 0px;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    font-size: xx-large;
+    color: white;
+    width: 10%;
+    height: 100%;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.space{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0px;
+}
+
+.custom-dropdown{
+  width: 15%;
+}
+.btn-back-drop{
+  background-color: #ea3c5f;
+  border: none;
+  color: lightgrey;
+  font-size: medium;
+}
+
+.btn-back-drop:hover{
+  background-color: #ea3c5f;
+  color: lightgrey;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  position: relative;
+  top: -90px;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: xxx-large;
+
+}
+
+.sub-title{
+  display: flex;
+  justify-content: center;
+  color: white;
 }
