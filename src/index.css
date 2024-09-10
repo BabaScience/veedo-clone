@@ -8,7 +8,16 @@ body{
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background-color:#ea3c5f;
+
+}
+
+svg{
+  background-color: #ea3c5f;
+}
+
+.background{
+  background-color: #ea3c5f;
+  width: 100vw;
 }
 
 
@@ -88,8 +97,16 @@ a{
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  position: relative;
-  top: -90px;
+  background-color: #ea3c5f;
+}
+
+.cHero{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* align-items: center; */
+  height: 78vh;
+  background: #ea3c5f;
 }
 
 .title{
@@ -99,11 +116,13 @@ a{
   font-weight: 700;
   color: white;
   font-size: xxx-large;
-
+  padding: 0px 10px 0px 10px;
 }
 
 .sub-title{
   display: flex;
   justify-content: center;
   color: white;
+  font-weight: 100;
+  font-size: large;
 }
