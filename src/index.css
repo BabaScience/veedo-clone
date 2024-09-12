@@ -8,7 +8,8 @@ body{
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-
+  position: relative;
+  overflow-x: hidden;
 }
 
 svg{
@@ -34,15 +35,15 @@ svg{
   background-color: #ea3c5f;
   z-index: 1030;
 }
-.wavy-border {
-  position: relative;
-  padding: 20px;
-  background-color: #fff;
-  overflow: hidden;
-  background: linear-gradient(to bottom, transparent 50%, #007bff 50%) no-repeat;
-  background-size: 100% 20px; /* Imposta l'altezza dell'effetto ondulato */
-}
 
+
+
+.contaiiner{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+}
 
 .logo{
     display: flex;
@@ -98,6 +99,8 @@ a{
   flex-direction: column;
   width: 100vw;
   background-color: #ea3c5f;
+  position: relative;
+  bottom: -20px;
 }
 
 .cHero{
@@ -115,7 +118,7 @@ a{
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: white;
-  font-size: xxx-large;
+  font-size: 56px;
   padding: 0px 10px 0px 10px;
 }
 
@@ -125,4 +128,60 @@ a{
   color: white;
   font-weight: 100;
   font-size: large;
+}
+
+.tooldiv{
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.tool{
+  border: solid 2px rgba(108, 117, 125, 0.3);
+  box-shadow: -2px -1px rgba(108, 117, 125, 0.3);
+  width: 14rem;
+  height: 14rem;
+  background: white;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+#tools-title{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #495057;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+}
+
+.foot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  background-color: #ea3c5f;
+  color: white;
+  height: 20vh;
+  width: 100vw;
+}
+
+.mark{
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  font-size: x-small;
+  color: white;
+  background-color: #ea3c5f;
+}
+
+.name-footer{
+  font-family: 'Luckiest guy';
 }
